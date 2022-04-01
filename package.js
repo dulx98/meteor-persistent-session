@@ -1,12 +1,12 @@
 Package.describe({
   name: "u2622:persistent-session",
-  version: "0.4.4",
+  version: "0.4.5",
   summary: "Persistently store Session data on the client",
   git: "https://github.com/okgrow/meteor-persistent-session"
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('0.9.1'),
+  api.versionsFrom("METEOR@2.6.1"),
   api.use(['jquery', 'amplify', 'tracker', 'reactive-dict', 'session', 'underscore', 'ejson']);
   // If `accounts-base` is loaded, we have to make sure that this package is
   // loaded after `accounts-base` is, so we specify `weak: true` here
